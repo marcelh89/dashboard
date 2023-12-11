@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+    integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+
+  <style>
+    body {
+      background-color: #252525;
+      color: white;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    footer {
+      color: white;
+      float: right;
+      text-align: right;
+      padding: 10px 30px;
+      width: 100%;
+      background-color:#343a40
+    }
+
+    .container {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      background-color: #343a40;
+
+    }
+
+    .testinner {
+      flex-direction: row;
+    }
+
+    card {
+      flex-direction: row;
+      width: fit-content;
+      margin: 10px;
+      padding: 10px;
+      background-color: #252525;
+      flex-grow: 4;
+    }
+
+    .margin-bottom {
+      margin-bottom: 10px;
+    }
+
+    .margin-right {
+      margin-right: 10px;
+    }
+
+    .linkrow {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      background-color: #252525;
+      color: white;
+    }
+
+    .linkrow-center {
+      justify-content: center;
+    }
+
+    .linkrow:hover {
+      background-color: #343a40;
+    }
+
+
+    .button-success,
+    .button-error,
+    .button-warning,
+    .button-secondary {
+      color: white;
+      border-radius: 4px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .button-success {
+      background: rgb(28, 184, 65);
+      /* this is a green */
+    }
+
+    .button-error {
+      background: rgb(202, 60, 60);
+      /* this is a maroon */
+    }
+
+    .button-warning {
+      background: rgb(223, 117, 20);
+      /* this is an orange */
+    }
+
+    .button-secondary {
+      background: rgb(66, 184, 221);
+      /* this is a light blue */
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <img src="https://placehold.co/100x50/png"
+      style="position: absolute; left: 0; top:0; margin: 15px;">
+    <h1 class="center">Multi Market Dashboard</h1>
+  </header>
+
+
+  <div class="container">
+
+    <card>
+      <h3 class="center">Platform Links</h1>
+
+        <div class="margin-bottom linkrow">
+          <span class="margin-right">Polen</span>
+          <div class="button-secondary pure-button margin-right">
+            DEV
+          </div>
+          <div class="button-warning pure-button margin-right">
+            STG
+          </div>
+          <div class="button-error pure-button margin-right">
+            PRD
+          </div>
+
+        </div>
+
+        <div class="margin-bottom linkrow">
+          <span class="margin-right">Australien</span>
+          <div class="button-secondary pure-button margin-right">
+            DEV
+          </div>
+          <div class="button-warning pure-button margin-right">
+            STG
+          </div>
+          <div class="button-error pure-button margin-right">
+            PRD
+          </div>
+
+        </div>
+
+        <div class="margin-bottom linkrow">
+          <span class="margin-right">Schweden</span>
+          <div class="button-secondary pure-button margin-right">
+            DEV
+          </div>
+          <div class="button-warning pure-button margin-right">
+            STG
+          </div>
+          <div class="button-error pure-button margin-right">
+            PRD
+          </div>
+
+        </div>
+
+    </card>
+
+    <card>
+        <h3 class="center">Github</h3>
+          <div class="pure-button margin-bottom linkrow">
+            <span class="margin-right">Frontend </span>
+            <a class="button-secondary pure-button margin-right"
+              href="#">Repo1</a>
+          </div>
+  
+          <div class="pure-button margin-bottom linkrow">
+            <span class="margin-right">Backend for Frontend</span>
+            <a class="button-secondary pure-button margin-right"
+              href="#">Repo2</a>
+          </div>
+  
+          <div class="pure-button margin-bottom linkrow">
+            <span class="margin-right">Backend</span>
+            <a class="button-secondary pure-button margin-right"
+              href="#">Repo3</a>
+          </div>
+  
+      </card>
+
+    <card>
+      <h3 class="center">Heroku</h3>
+        <div class="pure-button margin-bottom linkrow">
+          <span class="margin-right">Frontend</span>
+          <a class="button-secondary pure-button margin-right"
+            href="#">DEV</a>
+          <a class="button-warning pure-button margin-right"
+            href="#">STG</a>
+          <a class="button-error pure-button" href="#">PRD</a>
+        </div>
+
+        <div class="pure-button margin-bottom linkrow">
+          <span class="margin-right">Backend for Frontend</span>
+          <a class="button-secondary pure-button margin-right"
+            href="#">DEV</a>
+          <a class="button-warning pure-button margin-right"
+            href="#">STG</a>
+          <a class="button-error pure-button" href="#">PRD</a>
+        </div>
+
+        <div class="pure-button margin-bottom linkrow">
+          <span class="margin-right">Backend</span>
+          <a class="button-secondary pure-button margin-right"
+            href="#">DEV</a>
+          <a class="button-warning pure-button margin-right"
+            href="#">STG</a>
+          <a class="button-error pure-button" href="#">PRD</a>
+        </div>
+
+    </card>
+
+    <card>
+      <h3 class="center">Others</h1>
+        <div class="pure-button linkrow">
+            <span class="margin-right">Salesforce</span>
+          <a class="button-warning pure-button margin-right" href="https://test.salesforce.com">Test</a>
+          <a class="button-error pure-button" href="https://login.salesforce.com">Live</a>
+        </div>
+        <div class="pure-button linkrow">
+            <span class="margin-right">Atlassian</span>
+          <a class="pure-button margin-right"
+            href="#">Jira</a>
+            <a class="pure-button"
+            href="#">Confluence</a>
+        </div>
+    </card>
+
+  </div>
+
+  <footer>powered by pureCSS</footer>
+</body>
+
+</html>

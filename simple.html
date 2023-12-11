@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" >
+
+  <title>Instanzen</title>
+  <style type="text/css">
+    th {
+      text-transform: uppercase;
+    }
+    .table td, .table th {padding:0.35em;}
+    .btn {padding: .35rem .55rem;}
+    body {background-color: #252525;}
+    h1, a {color: #fff;}
+    a:hover {color: orange;}
+    .status-table {margin: 0 auto;}
+    .status-table tr {border-top: 1px solid #fff; }
+    .status-table tr td {padding:10px;}
+    .status-table-cell-left {font-weight: bold;}
+
+  </style>
+
+</head>
+<body style="margin: 0 auto; text-align: center;">
+  <h1 style="margin-top:20px; margin-bottom: 20px;">Instanzen</h1>
+  <img src="https://placehold.co/100x50/png" style="position: absolute; left: 0; top:0; margin: 15px;">
+  <button style="position: absolute; right: 0; top:0; margin: 15px;" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">
+    Ticket öffnen
+  </button>
+  <div style="padding-left: 100px; padding-right: 100px;">
+
+    <table class="table table-dark shadow" >
+     <tr>
+      <th style="color: orange;" scope="row"></th>
+      <th style="color: orange;" scope="row">  <button style="border: 1px solid #fff;"  class="btn btn-dark" data-toggle="modal" data-target="#exampleModal2">
+    VTP-Anbindung
+  </button></th>
+      <th style="color: orange;" scope="row"><button style="border: 1px solid #fff;" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal3">
+    VTP-Anbindung
+  </button></th>
+   
+
+    </tr>
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col"><a href="#" target="_blank">SF DEV</a></th>
+        <th scope="col"><a href="#" target="_blank">SF STG</a> </th>
+        <th scope="col"><a href="#" target="_blank">SF PRD</a></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Polen</th>
+        <td><a href="#" target="_blank" class="btn btn-success">PL - DEV</a></td>
+        <td><a href="#" target="_blank" class="btn btn-warning">PL - STG</a></td>
+        <td><a href="#" target="_blank" class="btn btn-danger">PL - PRD</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Schweden</th>
+        <td><a href="#" target="_blank" class="btn btn-success">SE - DEV</a></td>
+        <td><a href="#" target="_blank" class="btn btn-warning">SE - STG</a></td>
+        <td><a href="#" target="_blank"  class="btn btn-danger">SE - PRD</a></td>
+      </tr>
+      <tr>
+        <th scope="row">Frankreich</th>
+        <td><a href="#" target="_blank" class="btn btn-success">FR - DEV</a></td>
+        <td><a href="#" target="_blank" class="btn btn-warning">FR - STG</a></td>
+        <td><a href="#" target="_blank" class="btn btn-danger">FR - PRD</a></td>
+      </tr>
+    
+      
+    </tbody>
+  </table>
+
+
+
+
+
+      <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-m" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel2">VTP-Anbindung von DEV:</h5>
+          <button class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: #454d55;">
+            <div id="container" style="color: #fff;"></div>
+       </div>
+
+     </div>
+   </div>
+ </div>
+
+
+      <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-m" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel3">VTP-Anbindung von STG:</h5>
+          <button  class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="background-color: #454d55;">
+            <div id="container2" style="color: #fff;"></div>
+       </div>
+
+     </div>
+   </div>
+ </div>
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Öffne ein Ticket:</h5>
+          <button class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+     </div>
+   </div>
+ </div>
+</div>
+</body>
+</html>
